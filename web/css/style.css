@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    margin-left: 40px;
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform.3s;
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+.navigation .btn-login{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 900;
+    margin-left: 40px;
+    transition: 0.3s;
+}
+.navigation .btn-login:hover{
+    background: #fff;
+    color: black;
+}
+
+.promo{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    top: 90px;
+    z-index: 50;
+    box-shadow: inset 0px 0px 15px 10px gray
+}
+.content{
+    position: relative;
+    background: #161616;
+    width: 100%;
+    height: 1000px;
+    top:490px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -5px 5px black;
+    color: #fff;
+}
+.content p{
+    color: #fff;
+    font-size: large;
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background: red;
+    z-index: 99;
+    bottom: -560px;
+}
